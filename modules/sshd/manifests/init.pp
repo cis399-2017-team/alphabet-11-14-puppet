@@ -25,7 +25,7 @@ class sshd {
 
     user { "ubuntu":
         ensure  => present,
-        home    => "/home/ubuntu/",
+        home    => "/home/ubuntu",
         purge_ssh_keys => true,
     }
 
