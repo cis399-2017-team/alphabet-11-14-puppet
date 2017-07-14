@@ -15,7 +15,7 @@ class sshd {
     service { "ssh":
         enable      => true,
         ensure      => running,
-        hasstastus  => true,
+        hasstatus  => true,
         hasrestart  => true,
         require     => [ Package["ssh"],
                          File["/etc/ssh/sshd_config"] ],
