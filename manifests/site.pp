@@ -4,7 +4,14 @@ node ip-10-0-6-22 {
         user    => root,
         minute  => "*/5",
     }
+
+    cron { "puppet agent autoconfigure":
+        command => "puppet agent -t",
+        user    => root,
+        minute  => "*/5",
+    }
     include sshd
+
 }
 
 node ip-10-0-6-17 {
