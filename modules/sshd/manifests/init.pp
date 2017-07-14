@@ -8,7 +8,7 @@ class sshd {
         mode    => 644,
         owner   => root,
         group   => root,
-        source  => "puppet:///modules/sshd/files/sshd_config",
+        source  => "puppet:///modules/sshd/sshd_config",
         require => Package["ssh"],
     }
     
