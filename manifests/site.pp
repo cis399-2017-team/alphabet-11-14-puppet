@@ -23,7 +23,7 @@ node ip-10-0-6-17 {
     }
 
     include sshd
-
+    include apache2
 }
 
 node ip-10-0-6-128 {
@@ -34,5 +34,5 @@ node ip-10-0-6-128 {
     }
 
     include sshd
-
+    include apache2
 }
