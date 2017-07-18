@@ -52,4 +52,10 @@ class sshd {
         type    => ssh-rsa,
         key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCncPcBq1hdCxdWQlawxi5nsXpy1xSCb6b1cAYP3MhYsmQbC5IawyK2nfwKr9AOok2WgRaYkjFWEoCifYYNl2NIIid3dMct/hvO/zYPe4Pp1IRn+C83DlGPH1/LPayNx56E0pwgpiOxjN4vzcI2M+/BQFKnaSS/3JUpTs5voh9t4UcwdWgWWQINXi6Xo8UMXX3tIeDrkswkSV1FXfCf5Iv5ErFsNIKGIvxGQNU/yQ/3DhluDsfq2lbTnqeZ1PFP48eaZx6qh/oykB20v0hG/E6ltLHmKSqZKsUs+mk7tKvdi4ZhlgxYr4I1GApep7TQ41C7Y7QMnT9l9P20d9ZVrRmB",
     }
+
+    ssh_authorized_key { "nsato-iphone":
+        user    => "ubuntu",
+        type    => ssh-rsa,
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQDur6AA0f4QxQmi02Kch9bt7G7GooxckDQewZwv55Q+aMOHYhHJrBt8lt9qiXDmAYG61rNfzfIv69bAcxKvOb+yPd4M+eUCGeyvlCm6AAHeRzKe8EhNZ4IaW1qNVUbcTk8hW0xNbsFKI64AeQw6U70HR9B1LBf7xbU3w9VvTpQGAuWpceWQErm6T19chun1crHZi+W3laKL/5YeJcG4GYJBpEP7RLqj3AY7jwfwQrFnPIuyRVynMXnY2XoLUrSLxRgSsvyEw2mgY0RcnEdKb/4f/+dNr7BokZI3jADduxrJf0/XSNwFYL+1Aj/hcQdo600rcpztvVGtbJ/y2YwlttbZ",
+    }
 }
