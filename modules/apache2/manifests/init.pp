@@ -20,6 +20,15 @@ class apache2 {
         source  => "puppet:///modules/apache2/000-default.conf",
         require => Package["apache2"],
     }
+
+    file { "/var/www/html":
+        ensure  => directory,
+        mode    => 644,
+        owner   => root,
+        group   => root,
+        source  => "puppet:///modules/apache2/html",
+        recurse => true,
+    }
     
     service { "apache2":
         enable      => true,
