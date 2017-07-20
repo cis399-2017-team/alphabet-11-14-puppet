@@ -1,5 +1,5 @@
 class sshd {
-    package { "ssh":
+    package { "openssh-server":
         ensure => installed,
     }
     
@@ -9,7 +9,7 @@ class sshd {
         owner   => root,
         group   => root,
         source  => "puppet:///modules/sshd/sshd_config",
-        require => Package["ssh"],
+        require => Package["openssh-server"],
     }
     
     service { "ssh":
@@ -17,7 +17,7 @@ class sshd {
         ensure      => running,
         hasstatus  => true,
         hasrestart  => true,
-        require     => [ Package["ssh"],
+        require     => [ Package["openssh-server"],
                          File["/etc/ssh/sshd_config"] ],
         subscribe   => File["/etc/ssh/sshd_config"],
         #This causes writes to sshd_config to trigger service ssh restart
