@@ -13,6 +13,7 @@ node ip-10-0-6-22 {
 
     include sshd
     include apache2
+    include users
 }
 
 node ip-10-0-6-17 {
