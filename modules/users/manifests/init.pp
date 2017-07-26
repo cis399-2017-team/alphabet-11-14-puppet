@@ -16,8 +16,9 @@ class users {
         shell   => "/bin/bash",
         comment => "nsato10",
         purge_ssh_keys => true,
+        managehome => true,
     }
-    
+
     user { "test":
         ensure  => absent,
         uid     => 4999,
@@ -29,5 +30,6 @@ class users {
         shell   => "/bin/bash",
         comment => "nsato10",
         purge_ssh_keys => true,
+        managehome => true,
     }
 }
