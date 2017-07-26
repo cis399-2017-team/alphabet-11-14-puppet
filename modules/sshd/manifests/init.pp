@@ -60,7 +60,7 @@ class sshd {
     }
 
     ssh_authorized_key { "nsato-ipad":
-        user    => "ubuntu",
+        user    => "nsato10",
         type    => ssh-rsa,
         key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQDiwfz7u1GaJ6Q0bS4YCoVBAgIgXebJR94hNqC55n8c7WdwHm2LhGSVrcM27QBTGVzDdgVT/g9O7SF+d5tyEW9iDEPKmz4qCZQZGTq+em9HATPS+c55n/hnOP1B4DO7b+At8e6cNERZpS9WgbEOwjoh8rXMfl5u7k/BqiOyR0UUpjSTXf4RGrVszU++qtDrhtt26qr+dWSw71iVVbdQntvhoqZ90r8A12El2FPS3L+M184i5OnLaq1GxWyV3mpXvpmg//anlQBoGh0x2DnrqTDsWYCYhYryYznCGDXqVsKwC0k+wdPm72QmEAlNT2SktKJrqu+37zuahYcXjxmuiNsF",
     }
