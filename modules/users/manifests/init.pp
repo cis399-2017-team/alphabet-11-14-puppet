@@ -22,18 +22,21 @@ class users {
         home    => "/home/nsato10",
         *       => $useratt,
     }
+
     user { "mheb":
         ensure  => present,
         uid     => 4001,
         home    => "/home/mheb",
         *       => $useratt,
     }
+
     user { "loganr":
         ensure  => present,
         uid     => 4002,
         home    => "/home/loganr",
         *       => $useratt,
     }
+
     user { "test":
         ensure  => absent,
         uid     => 4999,
