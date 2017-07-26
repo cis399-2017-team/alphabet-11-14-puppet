@@ -19,7 +19,7 @@ class users {
     }
     
     user { "test":
-        ensure  => present,
+        ensure  => absent,
         uid     => 4999,
         gid     => 3999,
         home    => "/home/test",
