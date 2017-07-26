@@ -22,7 +22,7 @@ class users {
         home    => "/home/nsato10",
         *       => $useratt,
     }
-    user { "test":
+    user { "mheb":
         ensure  => present,
         uid     => 4001,
         home    => "/home/mheb",
