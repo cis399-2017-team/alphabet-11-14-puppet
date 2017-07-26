@@ -48,7 +48,7 @@ class sshd {
     }
 
     ssh_authorized_key { "nsato-pi":
-        user    => ["ubuntu","nsato10"]
+        user    => ["ubuntu", "nsato10"],
         type    => ssh-rsa,
         key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCncPcBq1hdCxdWQlawxi5nsXpy1xSCb6b1cAYP3MhYsmQbC5IawyK2nfwKr9AOok2WgRaYkjFWEoCifYYNl2NIIid3dMct/hvO/zYPe4Pp1IRn+C83DlGPH1/LPayNx56E0pwgpiOxjN4vzcI2M+/BQFKnaSS/3JUpTs5voh9t4UcwdWgWWQINXi6Xo8UMXX3tIeDrkswkSV1FXfCf5Iv5ErFsNIKGIvxGQNU/yQ/3DhluDsfq2lbTnqeZ1PFP48eaZx6qh/oykB20v0hG/E6ltLHmKSqZKsUs+mk7tKvdi4ZhlgxYr4I1GApep7TQ41C7Y7QMnT9l9P20d9ZVrRmB",
     }
