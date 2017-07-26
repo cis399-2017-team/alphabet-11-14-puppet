@@ -5,11 +5,8 @@ class users {
         gid     => 3999,
     }
 
-    user { "nsato10":
-        ensure  => present,
-        uid     => 4000,
+    $useratt = {
         gid     => 3999,
-        home    => "/home/nsato10",
         password => "!",
         password_max_age => "99999",
         password_min_age => "0",
@@ -19,17 +16,17 @@ class users {
         managehome => true,
     }
 
+    user { "nsato10":
+        ensure  => present,
+        uid     => 4000,
+        home    => "/home/nsato10",
+        *       => $useratt,
+    }
+
     user { "test":
         ensure  => present,
         uid     => 4999,
-        gid     => 3999,
         home    => "/home/test",
-        password => "!",
-        password_max_age => "99999",
-        password_min_age => "0",
-        shell   => "/bin/bash",
-        comment => "nsato10",
-        purge_ssh_keys => true,
-        managehome => true,
+        *       => $useratt,
     }
 }
