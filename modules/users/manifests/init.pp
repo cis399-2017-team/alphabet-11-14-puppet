@@ -75,11 +75,12 @@ class users {
         managehome => true,
         home    => "/home/cplachno",
     }
-    ssh_authorized_key { "":
-        user    => "",
+    ssh_authorized_key { "cplachno":
+        user    => "cplachno",
         type    => ssh-rsa,
-        key     => "",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCyS6Huzp2PgAPg5RGCLmQrKFQj/MiXOqLHle+Cs/3bEpm7w+Za2OU5hfV10J72U+HQ+9Z7GwYjO1+0iGgfeCTOQqS+JC74ojnmCmw4iMVMII6Bm71eFWYFG/8IB6F9VTUWFx3WW0rPzsdh0qSLaLlLqzHTaOgeEEVWQ2C7IFFKitlqKnfA8m4jg9g+820BBuUwZe9fFY0Nl+vb1sY0FqmxMH1atMNHpTnnS9/jR9fnhuixa/VaSTF7lo+igcUIUl+B5pD+juiim7k9PPJ55p4b9ukujdSNeGruovJUFMIHgp2sRS9OmihlbHOhO1YMlry8/2ex6Fn5Gm6el5Z/KyoH",
     }
+
     user { "vino":
         ensure  => present,
         uid     => 4004,
@@ -93,11 +94,12 @@ class users {
         managehome => true,
         home    => "/home/vino",
     }
-    ssh_authorized_key { "":
-        user    => "",
+    ssh_authorized_key { "vino":
+        user    => "vino",
         type    => ssh-rsa,
-        key     => "",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQC5muwuCYjAXyNqJey4F0hheb2KADcYtfLngn2qixILOdeKWNJB8+yGjYKHKc1/39qW55AtucV+77HEWzoYl1/V/0wswmE1RsnOyEce3gcH2naFNcnzKjqnCe0zcZCUBZIr3MsPvR1Y/BwNGCK+Vo7WYyqyOPNAmFj1dNiOEedTKJqzcFIO0awTY5MJC+G9q32YUbHv60vIeWtix1GnaIv9mbjIofYeBXlBr3mxH5dyZxunC+XyYlgCHToJpWlwef9KPQ9mPRsb3Hc98tx9pSpmI6+XHamaoXVuDAQUxEgkwTSth9w7q/S5Kv1rEL/3B8I7a1laT/dd3PPCNtM8s5y/",
     }
+
     user { "cnf":
         ensure  => present,
         uid     => 4005,
@@ -111,11 +113,12 @@ class users {
         managehome => true,
         home    => "/home/cnf",
     }
-    ssh_authorized_key { "":
-        user    => "",
+    ssh_authorized_key { "cnf":
+        user    => "cnf",
         type    => ssh-rsa,
-        key     => "",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCROsSl7lF63moq10Z/JQ4MCEfFwxu/lH2LLTYHl6wolKRSEaJcFNx/Wszf76xTnyjIj9knbFu8OTQtu+zDYm9wwn2yXlULMLOoW76roQivq/zUknhtJYsbnDzCwYHiwdq9eGagn2vqtsZpoZG1vZrvt9SMiNHiyDkeM0yKNM+mi/qd+OWObqsNo0AW/W/5I7IIburbTB6riMBRgmqa5r0jXaQj7bGBImar3ohZRLWCpfH8pFnQpwVSAAAUfJEOCW5Y6dwWXqOh7lfVB1+T9CQsFyLIHyoo/vf+6Nu1D80CPI1IsjKMMuZEraqZrjhc6W9o/Y3+2GtLe0iePN2PA+wR",
     }
+
     user { "pogrebinsky":
         ensure  => present,
         uid     => 4006,
@@ -129,11 +132,12 @@ class users {
         managehome => true,
         home    => "/home/pogrebinsky",
     }
-    ssh_authorized_key { "":
-        user    => "",
+    ssh_authorized_key { "pogrebinsky":
+        user    => "pogrebinsky",
         type    => ssh-rsa,
-        key     => "",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQC+GfVig6yYm5Zc+5oQR5oCSpn6T2UgY/rEFmCbVPFILHlpmP3Ljm8J7IvDJyfJOZSbYWgt5LZGulpmZYayYFBo02vJC9daA8ax4LgqHmqrOQKl6J+NRwzUbEsQwrYznGwecOrX5d2IG5eV4lon1GAn2rOmZLQGgu6b1F39aYHZ6wRrN1ZAyXbXeX4Jb65Vfd8hbWNQ4/buJlVlJEW2aA0djUEdVNUQuFjZljH9bHk3yM9/Ak4sP9ezB5fNTciKuswvjXLfvl0W0Fds3wAwa+FFMDGfCdZNoigs42Yo533ld1X0fWjC9BvYRNw4k27bAZlX/9x1VcJwGMEQDtueE+aX",
     }
+
     user { "kaelas":
         ensure  => present,
         uid     => 4007,
@@ -147,11 +151,12 @@ class users {
         managehome => true,
         home    => "/home/kaelas",
     }
-    ssh_authorized_key { "":
-        user    => "",
+    ssh_authorized_key { "kaelas":
+        user    => "kaelas",
         type    => ssh-rsa,
-        key     => "",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCLSFcuq/BzCKmFRJ6/aM8ywlUrth1+fSF4R7S7kwevTWN9fjPFULdLGdeWHoNK8gtnoPv8a9mlmW45g4FDGAipR9/yfqPqjKDr3HP62dmwutyiZp7I7iwrsydYjThV29F6TT6R4Mnbm/nmKys75C63EpxguEjWuGhRxe2AzZJMBN5Nvf6I0fA7UdDiAoRArMznyho9Y+Arog1oQO9WdETjil/3vnDRP6S79AvVIochJCdmQWOI9qixPAA1ozxhIgRujjk+iQtj25cbPoCPGSpFYMGvK5vrqWik+rLrkregcbryNuZjr3FeJwd1K/82OqjdwstwE7otvh9YiHUgDO6T",
     }
+
     user { "nboyd":
         ensure  => present,
         uid     => 4008,
@@ -165,11 +170,12 @@ class users {
         managehome => true,
         home    => "/home/nboyd",
     }
-    ssh_authorized_key { "":
-        user    => "",
+    ssh_authorized_key { "nboyd":
+        user    => "nboyd",
         type    => ssh-rsa,
-        key     => "",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCUAISsul1Ad4yd8EM3OBSvPh+8vvjkJ0awW8FWX0BfMgKBb/XQ6pyzCA2i5fqw5wC//0F0JCFhh7pin67077Jyq8PdL1c3WbUrJcRMoATtxQi51BfkxnaME0wngKxaiBdzL0Ge2hlmxQhQbiSBQMJvLU2/MjGgi+pGnja2GLzUprqICgBz2cIIDlIryESMr3p9JpfqgjHG6hZZG5hPOrPXenxnmBqSje1ld/9mvc5KCwclbFjtqkKpSFGiCjDgAoAjvuWXtx3sJw0VbborB5QZmyl261E4KDHBDoQpfznP9rx7R49YlM8BHrCAaDyJ3mlV1b50odh1AwxLZgUcTlAB",
     }
+
     user { "coletc":
         ensure  => present,
         uid     => 4009,
@@ -183,11 +189,12 @@ class users {
         managehome => true,
         home    => "/home/coletc",
     }
-    ssh_authorized_key { "":
-        user    => "",
+    ssh_authorized_key { "coletc":
+        user    => "coletc",
         type    => ssh-rsa,
-        key     => "",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCEmvb0cSCkdIoTggm4y1AtGMLQGupt35HLCwL8ZF147cvRJ72EtU9kdyx4Ol74OqvwizwAVjqCWHDtttrNb1xnmlHAbsG3lpPGday4VXgjfcHAmzmaofKz1BiV/g4f370th92VP82+eBUiDpiF9U/WRVZR5xYvPH02ixY+4T0Tf5wCmG6JTsS6P4SSzEWNU4dkfq9kHTlC7L5BK/2XmdcqpduEz+Fp+5FB5OmHmWnsD1ZPHIN1ExASbHymamUKHTWCCePPgj3J6G0vPFJ4gtfrkDk6OfhX6z9X0jcMvKc4SmtJzIrdRfUpIeIzp9eV8+OB/M2qAo3inYr+pNRFNq1d",
     }
+
     user { "jdolan":
         ensure  => present,
         uid     => 4010,
@@ -201,11 +208,12 @@ class users {
         managehome => true,
         home    => "/home/jdolan",
     }
-    ssh_authorized_key { "":
-        user    => "",
+    ssh_authorized_key { "jdolan":
+        user    => "jdolan",
         type    => ssh-rsa,
-        key     => "",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCzQ9y1oCy32mSQNuxr6ti9aE02mf1TV4DnWAMkHrBhrgzwF6ycLrqkTqUA0gOaWX9AlvgotVNMVgpHicM0QM5BCD1eLai1MKBewhqTzw9hnpaf9OugdWCSQtC7Jc9M0sYFCp6kdLCRHyvUvnb74jQXFA4EiXO1bLfnIbTCcHNvQDdymyEnfHD/Q5JeNm+DqaN4ZqcMqzlnWM27+/m312nn1KEIWpRANWJBJSBIFvXWS4YmrbFZN7WkRYy1GJisGRhk4PaHFQOZJJ26Im8URBhKhPlQwJljIU8kuboQ/2ASrboBPSYOV3Cmoh1PETjeu2OXag1shUlUaSatqBb/t+uF",
     }
+
     user { "houllette":
         ensure  => present,
         uid     => 4011,
@@ -219,11 +227,12 @@ class users {
         managehome => true,
         home    => "/home/houllette",
     }
-    ssh_authorized_key { "":
-        user    => "",
+    ssh_authorized_key { "houllette":
+        user    => "houllette",
         type    => ssh-rsa,
-        key     => "",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCVs/6140OKWU4CBCR8H/eDSxeAOhlyQzuv6X4xv4PxW0425s5Rz/pXKPv5OfZdA0WTBEBCHkrxC2Kn2n7IId25kqhckI5T6W0F3LLcmFXkE5kxzbGICgeXRHAewozv8TrK3pbMIJCbnTEnkqXkf72FFuog36GbbHuKE60qCYrF5h4oQ6gfXvBfhjxusfb4hdi3H84dQrG4IK9yyr5o2U1b5cV4kP/jt9wjiZapWSxcvbvsgftRdTrRx5Bru0Jfn+bKcPH9UKFplDQTC0HbCzPQ5242J9vt/wBubPPdevw1SukvdOAIE8tXSZhmJodNkmBLOZy+NXjK7cXxFcdGeCwd",
     }
+
     user { "jsheabia":
         ensure  => present,
         uid     => 4012,
@@ -237,11 +246,12 @@ class users {
         managehome => true,
         home    => "/home/jsheabia",
     }
-    ssh_authorized_key { "":
-        user    => "",
+    ssh_authorized_key { "jsheabia":
+        user    => "jsheabia",
         type    => ssh-rsa,
-        key     => "",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCwP0EXIM1EtCI+OyhgAZ8greAxbdz633f6m/OEsymAtJefkEjw1A5vrMmkyfeoSAELuRbYHxX3N2gPU606IewVZt9KDkL34HMwQDJU6P4fGX5u0WrhmVhqsY2e4UejPtjOtAXGvOjRzkFHuYMLSAL6BbTTTo96Najh9inMxYjb2rP+9E/IRCj9trkEKspHKOTGlj+ADYXtFNb/4KfXuC+oexl2JAGIfSzM9sFBPA3z4d+kxa9AWf1iKWhEB2m5lefD/p8jcjRpXNBm281rIj4vkeWOKFh71gVZ9vR0p+VtYLs3f5tCU2G7zA6pjW8RricBeqG7egWS7DuSLw8datTH",
     }
+
     user { "dholstege":
         ensure  => present,
         uid     => 4013,
@@ -255,11 +265,12 @@ class users {
         managehome => true,
         home    => "/home/dholstege",
     }
-    ssh_authorized_key { "":
-        user    => "",
+    ssh_authorized_key { "dholstege":
+        user    => "dholstege",
         type    => ssh-rsa,
-        key     => "",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCTPThmNila82dRmG8nJMBXVReNJT0lrk1saFKmmZ+UjR6t2TvQBErUmZUiA1/dwiIWKRLUF4miagKQMeZECvdPNarL748hlJvKAFibGEDFgTMD3gLnmV5O0dVOaR1yCK2et6RgPr0HaK1YoudllIO3dfcyD14YF7KgkQLUS29GqxzYa8UWfpZXdTAK3i4pGX2zE6FeLohEZT4HscOqa/QQsyrjvuIaWcQCp4YMiFhjMsMIYMsxk2Ge1cbDm+aRQcAIFSUdjeO3R4oMx4GS+WhewpCGVleBn8zSHuh4qBUcQDuMQ4TTJ7mrvNm2tGcHjtuZyKQbhBL1YW1EuS6VsEfZ",
     }
+
     user { "jemin":
         ensure  => present,
         uid     => 4014,
@@ -273,9 +284,9 @@ class users {
         managehome => true,
         home    => "/home/jemin",
     }
-    ssh_authorized_key { "":
-        user    => "",
+    ssh_authorized_key { "jemin":
+        user    => "jemin",
         type    => ssh-rsa,
-        key     => "",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCgq+a6lGdgvfNl37gNfJFzth1aijWIo8goRvH/P2ElQxY1aKmIbYyJKGFkgyEo8cWM+kr4s8OOufputsv6FV4Di9GPECBeBoPN2va4nWakep6Fryanj5QAla7wV0AcVMgiSXYF03+HOLfLBECv3xl3sYleSC3bkkcwgXko8xxal/+qGD63DWWKc4A2WlOf0a8tb6paTPYEUOBBvT4lD5u0yU7wB5+0/HQTGZIqLNX6AeVPMl74zFIhNQbUyjNWMuo3JolOn7JffTzdGBV2nmszxjyAjRG6M2/xVlocpBVjDclhHBGqHqNQd2ZFwWKsY5eZxuk1im4047CUkcFX4vw7",
     }
 }
