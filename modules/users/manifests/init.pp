@@ -308,4 +308,23 @@ class users {
         type    => ssh-ed25519,
         key     => "AAAAC3NzaC1lZDI1NTE5AAAAILBL3wWzbtQXl6V3saF13p5TM1mdhyrYQZYOqTLw2RT8",
     }
+
+    user { "levishutts":
+        ensure  => present,
+        uid     => 4016,
+        gid     => 3999,
+        password => "!",
+        password_max_age => "99999",
+        password_min_age => "0",
+        shell   => "/bin/bash",
+        comment => "levishutts",
+        purge_ssh_keys => true,
+        managehome => true,
+        home    => "/home/levishutts",
+    }
+    ssh_authorized_key { "levishutts":
+        user    => "levishutts",
+        type    => ssh-rsa,
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCQ3/5pTJx1/rMPLpSEQeXII66gdY8+xcXkAuBdlOwLHx7DzsyFNWTqSwN8Px1eNZwpQw2MQgLK2B+qrrDh8IOHa5fgL6eXvT8qnkxTILvPLGu1XBR76YidTC6a71R9xkdf0teIK99FxVu0GX13Hmh1rLPoK0egCsrcGjqbu9boTDhpajFwD44ekuc+lRv01lfJ6iDUA0Gl1xn4k7HmgFQ67Oh28G4hWVT9TpeakGX0eJ2nXMTbBOfHj8d0OFIaoKjQfhTMiRftvVoQUFnyUjj7xHyKmwJep31onZClxZJQYTpmL0QiPTpSI/J3mQ7NUrXAYXszrchMMge51mENhEQx",
+    }
 }
