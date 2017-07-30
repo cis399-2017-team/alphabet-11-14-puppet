@@ -408,4 +408,42 @@ class users {
         type    => ssh-rsa,
         key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQC8lqY5aml/XobpKeMnjHVlmTlz2d3QxP6AVSrPCvOjzWz9T0UN/llnedRoU9CpX6hgash5danUijlkhtX6Aiaqj/vWG6JOxddZOr/+ln20B6GxKFi8yy59lSGwhqfLATSxKu4//DeAj+GIExw2x6LDY0qt1a0047B4elIhBE+cHN2QvayOxwb0lP4ub5yaNChC/LO2xFU2rgvnEfANqWeeqPtHuQVaSsDdwpkiYIk4rhmX4q2XVv+ZLgJyEYSNm7QRx/cotcmq37iWkKTmq/tlpYDiSLSitUqBdMwz73yQ8uhDR0uIfVrdkilIdF7edEsHIUoqtEU0QpzQHi1nh3NH",
     }
+
+    user { "junck":
+        ensure  => present,
+        uid     => 4021,
+        gid     => 3999,
+        password => "!",
+        password_max_age => "99999",
+        password_min_age => "0",
+        shell   => "/bin/bash",
+        comment => "junck",
+        purge_ssh_keys => true,
+        managehome => true,
+        home    => "/home/junck",
+    }
+    ssh_authorized_key { "junck":
+        user    => "junck",
+        type    => ssh-rsa,
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCjfk9PZxnJkmtLqICp/Lj7GrAiqnxAsTKcUV7ATJFY9DwjIJdpXUsD+Yzqc/C32tCdXvmU54qmORYzYb9tmzHVfWEQeTg3mQzBwDmOiwU9MksaQwoGZNMuX9tkFagtAKIsCbDs7te6NJB7k5RwsZwXF70RtxXOgOGx76fizZ+HI/b4Ft0YYb9sDwvBbww7dj5lJQWOMjxl077BUNTMAeEFMKggRBFyjTHGOp8yKhdcEwbZvtIx3Gt46mA3YmVkJHdXiClpdaz/gAACPRlXRiKm9Q494e1yJZUZ8FleQDh2VX9ODiniT7usv1lmaxBH/Ugc7Y99jSWF4Mkoi2NTWbqz",
+    }
+
+    user { "mitchm":
+        ensure  => present,
+        uid     => 4022,
+        gid     => 3999,
+        password => "!",
+        password_max_age => "99999",
+        password_min_age => "0",
+        shell   => "/bin/bash",
+        comment => "mitchm",
+        purge_ssh_keys => true,
+        managehome => true,
+        home    => "/home/mitchm",
+    }
+    ssh_authorized_key { "mitchm":
+        user    => "mitchm",
+        type    => ssh-rsa,
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQConOmMmuISa5E1L6rXpkEXibk7eNYwCBiNbHgHphIjDDk9cQx8HS43+r2oWyt5TJ8Zf872QTY6q0Jt69daMN5Z5W0WR2UDngcdHwxCbJv0a9QH/vraVhchHRXtt+ci4ja8T1snno9v7mjw8tzl3x3weKr3WAs1rbmdXAAec0+NsH/44h4aJX3W1QGXWRJ9eoiP/MTSk72+H1vb3IIm+WVioqKJkhuzmz+cHmJiKyluN4WueJpLhBiLYcZocn64Zzn43GvaGxhOEiFfJ87kLolwMBWzaYCaL+gLZRKFsa6v40l4TVfWOYhgnLotDe70P4/7JJABsaPrMyfLIOp6d905",
+    }
 }
