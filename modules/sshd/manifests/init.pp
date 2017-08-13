@@ -44,7 +44,7 @@ class sshd {
     ssh_authorized_key { "loganr-desktop":
         user    => "ubuntu",
         type    => ssh-rsa,
-        key     => "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDZeindj+egzaQe274HtiB759keqcij7wxnez89JbCP54ezjti5YzMN9YW7QPifVX+RuNdHU3NPmTIR8lSM60hlt/Ad9+XOkPfQRt1hG02AcK16Ukcc5iKiVcPtTrx6eo1bYhuvx1l41lCQLwKIikHqpHxrr8ImxKyYEutvk+A8imDLBh6iifl5nypZAGaaVnDjgADplF8tMGsyZOHOCtr8trfHONSJTYs1bEzlywRyYLnhi0hA9G+ANOgW/c4xBOZJBcmN0oYqbpDPkyP4oJNffsPJ6rvupSZ8S3QbLHuX+oCaJKGBNeYrydf+aPo0MT1d/2UnZ1wRsK9CNjZTKAHlswkFO0LcA3hzeOf4u4f7bmeUEZLNXGtwctqRg5xHDh0ce4oIwuhfo3FU/LrnrzDl23L2j0s5QVrkeMsaonuUFYOrGmAIPvPxBamApKcZbi6YEozXfYvwIky/2AoyDbnKP3ETEYUNoGBLsM9GsMcTAjSIGkQUD/VDUZ26ubZP85oycTFSQ245o3kO61dNe8H2pA/8JtB2re+iqKktWzCx5Ou+j6j1VNWcKrOLF7HO08Yu6ETCOWccguFrPRylix3lQHHK1CsgK40/QqFG7/0VguqCC+GDd7X39w1tMDYGPx2MlhNerVcGYNB9uEYe0rvL3NY1vbmb3F3wmx9hwzKGJw== loganr@iMac.local",
+        key     => "AAAAB3NzaC1yc2EAAAADAQABAAACAQDZeindj+egzaQe274HtiB759keqcij7wxnez89JbCP54ezjti5YzMN9YW7QPifVX+RuNdHU3NPmTIR8lSM60hlt/Ad9+XOkPfQRt1hG02AcK16Ukcc5iKiVcPtTrx6eo1bYhuvx1l41lCQLwKIikHqpHxrr8ImxKyYEutvk+A8imDLBh6iifl5nypZAGaaVnDjgADplF8tMGsyZOHOCtr8trfHONSJTYs1bEzlywRyYLnhi0hA9G+ANOgW/c4xBOZJBcmN0oYqbpDPkyP4oJNffsPJ6rvupSZ8S3QbLHuX+oCaJKGBNeYrydf+aPo0MT1d/2UnZ1wRsK9CNjZTKAHlswkFO0LcA3hzeOf4u4f7bmeUEZLNXGtwctqRg5xHDh0ce4oIwuhfo3FU/LrnrzDl23L2j0s5QVrkeMsaonuUFYOrGmAIPvPxBamApKcZbi6YEozXfYvwIky/2AoyDbnKP3ETEYUNoGBLsM9GsMcTAjSIGkQUD/VDUZ26ubZP85oycTFSQ245o3kO61dNe8H2pA/8JtB2re+iqKktWzCx5Ou+j6j1VNWcKrOLF7HO08Yu6ETCOWccguFrPRylix3lQHHK1CsgK40/QqFG7/0VguqCC+GDd7X39w1tMDYGPx2MlhNerVcGYNB9uEYe0rvL3NY1vbmb3F3wmx9hwzKGJw==",
     }
 
     ssh_authorized_key { "mheb-kp":
