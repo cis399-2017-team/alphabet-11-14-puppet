@@ -41,6 +41,12 @@ class sshd {
         key     => "AAAAB3NzaC1yc2EAAAADAQABAAACAQC2H7AV3pr9nCZfYDHp5Ji1RLQozWYCC9PfodqvEBLY4S+RHsVWMuyenSEdf0mMuYT6QISk2hG5aTZD1psMPK8glFIt0UQ1m8ZPWaUzUogM95WWazwnzfiLcPLAPYRnMBMLO0yFFPlVFSWEOLQ7jMoM/eXOpPzZdZ8iDKa/Fe3tJqnJaNDncxzqvvRjyMWt5+OUidah+DkKWwzymQ+XH/ypIXY5+6bzcBfkb4Z1/ijRbcu7pGu01fWLRWCvy/bJDqBFgSEIGTSngVd/B0oXOGqvdwScgldVoIKExwzSQ7JDITmOTkej/VpwUC3lKM21a+HG85AB5YoPqFr/6ih1FORfQbmjoWdT4VAJoFH6WfngoqcOfci3qa+BNDecRiOuQbNu65ptPfOhJh7aiuDdL+tmY+C00gtbVDhLTYTM5jepembpFcv/7f2O9VtWJpPXZ4u1WkaffmqH3ZqV+/ET7wxDZeGgr6RvoG88UxdWUvr/wHgJvngEz4Y1DHitwCzCXIko0kH73eaIt8kaJUEdOl6FceoBZBK9i2mNktnd5sWtsxAXO/1GOR7a0Mw+XCUI9r8sN6B5fX9wbnBNj2kClEJLInvIVxeQqIw2NH2FzYgxKySCH4h04yoZR0fUSgPHxEdUQPM6X/lZDYX1bVd+NNsu9YQuRH4JLEclE5vTLIXLxw==",
     }
 
+    ssh_authorized_key { "loganr-desktop":
+        user    => "ubuntu",
+        type    => ssh-rsa,
+        key     => "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDZeindj+egzaQe274HtiB759keqcij7wxnez89JbCP54ezjti5YzMN9YW7QPifVX+RuNdHU3NPmTIR8lSM60hlt/Ad9+XOkPfQRt1hG02AcK16Ukcc5iKiVcPtTrx6eo1bYhuvx1l41lCQLwKIikHqpHxrr8ImxKyYEutvk+A8imDLBh6iifl5nypZAGaaVnDjgADplF8tMGsyZOHOCtr8trfHONSJTYs1bEzlywRyYLnhi0hA9G+ANOgW/c4xBOZJBcmN0oYqbpDPkyP4oJNffsPJ6rvupSZ8S3QbLHuX+oCaJKGBNeYrydf+aPo0MT1d/2UnZ1wRsK9CNjZTKAHlswkFO0LcA3hzeOf4u4f7bmeUEZLNXGtwctqRg5xHDh0ce4oIwuhfo3FU/LrnrzDl23L2j0s5QVrkeMsaonuUFYOrGmAIPvPxBamApKcZbi6YEozXfYvwIky/2AoyDbnKP3ETEYUNoGBLsM9GsMcTAjSIGkQUD/VDUZ26ubZP85oycTFSQ245o3kO61dNe8H2pA/8JtB2re+iqKktWzCx5Ou+j6j1VNWcKrOLF7HO08Yu6ETCOWccguFrPRylix3lQHHK1CsgK40/QqFG7/0VguqCC+GDd7X39w1tMDYGPx2MlhNerVcGYNB9uEYe0rvL3NY1vbmb3F3wmx9hwzKGJw== loganr@iMac.local",
+    }
+
     ssh_authorized_key { "mheb-kp":
         user    => "ubuntu",
         type    => ssh-rsa,
