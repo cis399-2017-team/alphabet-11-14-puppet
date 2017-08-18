@@ -50,7 +50,7 @@ class inspircd {
     }
     file { "/var/lib/anope/db/backups":
         ensure  => directory,
-        mode    => 0740,
+        mode    => 0755,
         owner   => root,
         group   => root,
     }
