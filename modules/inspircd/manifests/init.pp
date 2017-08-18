@@ -48,11 +48,18 @@ class inspircd {
         source  => "puppet:///modules/inspircd/anope.conf",
         require => Package["anope"],
     }
+    file { "/var/lib/anope/db/backups":
+        ensure  => directory,
+        mode    => 0740,
+        owner   => root,
+        group   => root,
+    }
     service { "anope":
         enable      => true,
         ensure      => running,
         hasstatus   => true,
         require     => [ Package["anope"],
+                         File["/var/lib/anope/db/backups"],
                          File["/etc/anope/services.conf"] ],
         subscribe   => [ File["/etc/anope/services.conf"] ],
     }
