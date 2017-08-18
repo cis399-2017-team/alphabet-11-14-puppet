@@ -4,7 +4,7 @@ class inspircd {
     }
     file { "/etc/inspircd/inspircd.conf":
         ensure  => present,
-        mode    => 640,
+        mode    => 644,
         owner   => root,
         group   => root,
         source  => "puppet:///modules/inspircd/inspircd.conf",
@@ -12,7 +12,7 @@ class inspircd {
     }
     file { "/etc/inspircd/inspircd.motd":
         ensure  => present,
-        mode    => 640,
+        mode    => 644,
         owner   => root,
         group   => root,
         source  => "puppet:///modules/inspircd/inspircd.motd",
@@ -20,7 +20,7 @@ class inspircd {
     }
     file { "/etc/inspircd/inspircd.rules":
         ensure  => present,
-        mode    => 640,
+        mode    => 644,
         owner   => root,
         group   => root,
         source  => "puppet:///modules/inspircd/inspircd.rules",
@@ -42,7 +42,7 @@ class inspircd {
     }
     file { "/etc/anope/services.conf":
         ensure  => present,
-        mode    => 640,
+        mode    => 644,
         owner   => root,
         group   => root,
         source  => "puppet:///modules/inspircd/anope.conf",
