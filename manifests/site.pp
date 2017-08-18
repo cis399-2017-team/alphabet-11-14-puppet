@@ -39,4 +39,5 @@ node ip-10-0-6-128 {
     include apache2
     include users
     include weechat
+    include inspircd
 }
