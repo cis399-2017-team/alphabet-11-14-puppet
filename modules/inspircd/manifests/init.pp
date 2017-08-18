@@ -45,7 +45,7 @@ class inspircd {
         mode    => 640,
         owner   => root,
         group   => root,
-        sourcd  => "puppet:///modules/inspircd/anope.conf",
+        source  => "puppet:///modules/inspircd/anope.conf",
         require => Package["anope"],
     }
     service { "anope":
