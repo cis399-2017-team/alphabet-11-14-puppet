@@ -14,7 +14,7 @@ class inspircd {
         ensure  => present,
         mode    => 640,
         owner   => root,
-        kroup   => root,
+        group   => root,
         source  => "puppet:///modules/inspircd/inspircd.motd",
         require => Package["inspircd"],
     }
