@@ -52,7 +52,6 @@ class inspircd {
         enable      => true,
         ensure      => running,
         hasstatus   => true,
-        hasrestart  => true,
         require     => [ Package["anope"],
                          File["/etc/anope/services.conf"] ],
         subscribe   => [ File["/etc/anope/services.conf"] ],
