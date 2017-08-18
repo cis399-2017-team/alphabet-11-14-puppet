@@ -58,6 +58,7 @@ class inspircd {
         enable      => true,
         ensure      => running,
         hasstatus   => true,
+        restart     => "service anope --full-restart",
         require     => [ Package["anope"],
                          File["/var/lib/anope/db/backups"],
                          File["/etc/anope/services.conf"] ],
