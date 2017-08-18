@@ -32,8 +32,8 @@ class inspircd {
         hasstatus  => true,
         hasrestart  => true,
         require     => [ Package["inspircd"],
-                         File["/etc/inspircd/inspircd.conf"] ],
-                         File["/etc/inspircd/inspircd.motd"] ],
+                         File["/etc/inspircd/inspircd.conf"],
+                         File["/etc/inspircd/inspircd.motd"],
                          File["/etc/inspircd/inspircd.rules"] ],
     }
 
